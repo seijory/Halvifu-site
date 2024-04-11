@@ -1,0 +1,663 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+/* FONTS */
+/* Montserrat */
+@font-face {
+	font-family: 'Montserrat';
+	src: url('/fonts/Montserrat-Medium.woff2') format('woff2'),
+			 url('/fonts/Montserrat-Medium.woff') format('woff');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+			 url('/fonts/Montserrat-SemiBold.woff') format('woff');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('/fonts/Montserrat-Bold.woff2') format('woff2'),
+			 url('/fonts/Montserrat-Bold.woff') format('woff');
+	font-weight: 700;
+}
+/* Akwe Pro */
+@font-face {
+	font-family: 'Akwe Pro';
+	src: url('/fonts/AkwePro-DemiBold.woff2') format('woff2'),
+			 url('/fonts/AkwePro-DemiBold.woff') format('woff');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Akwe Pro';
+	src: url('/fonts/AkwePro-Bold.woff2') format('woff2'),
+			 url('/fonts/AkwePro-Bold.woff') format('woff');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Akwe Pro';
+	src: url('/fonts/AkwePro-Black.woff2') format('woff2'),
+			 url('/fonts/AkwePro-Black.woff') format('woff');
+	font-weight: 900;
+}
+
+body {
+	background-color: #1f0a55;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	background-image: url(/assets/images/main.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	padding: 10px 0px 0px 0px;
+
+
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1056px;
+	background-color: #1E0B5294;
+	border-radius: 27px;
+	padding: 9px 62px 9px 60px;
+	margin-bottom: 16px;
+}
+
+.nav-logo {
+	display: flex;
+	align-items: center;
+}
+
+.nav-logo p {
+	font-family: 'Akwe Pro';
+	font-weight: 900;
+	font-size: 16px;
+	color: #FFFFFF;
+	margin-left: 10px;
+}
+
+nav {
+	display: flex;
+}
+
+.nav-link {
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 14px;
+	color: #DCD7D7;
+	margin-right: 32px;
+}
+
+.nav-x {
+	margin-right: 13px;
+}
+/* Main */
+main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	border: 5px solid #B5B0B0B0;
+	border-radius: 19px;
+	padding: 74px 0px 170px 0px;
+	width: 100%;
+	max-width: 1056px;
+}
+
+h1 {
+	font-family: 'Akwe Pro';
+	font-weight: 900;
+	font-size: 80px;
+	color: #FFFFFF;
+	text-align: center;
+	width: 734px;
+	margin-bottom: 220px;
+}
+
+.main-buttons {
+	display: flex;
+	align-items: center;
+}
+
+.main-button {
+	font-family: 'Akwe Pro';
+	font-weight: 600;
+	font-size: 18px;
+	color: #FFFFFF;
+	padding: 8px 22px 8px 22px;
+	border-radius: 57px;
+}
+
+.green {
+	background-color: #2CA902;
+	margin-right: 13px;
+}
+
+.purple {
+	background-color: #742AFB;
+}
+
+article {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+/* Timer */
+.timer {
+	width: 100%;
+	max-width: 950px;
+	background-color: #31166B;
+	border-radius: 0px 0px 16px 16px;
+	padding: 20px 60px 34px 64px;
+	margin-bottom: 35px;
+}
+
+h3 {
+	font-family: 'Akwe Pro';
+	font-weight: 900;
+	font-size: 48px;
+	color:	#2CA902;
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+.timer-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.timer-number {
+	font-family: 'Akwe Pro';
+	font-weight: 900;
+	font-size: 96px;
+	color: #FFFFFF;
+}
+
+.timer-text {
+	font-family: 'Akwe Pro';
+	font-weight: 900;
+	font-size: 36px;
+	color: #2CA902;
+}
+
+.timer-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* Join */
+.join {
+	width: 100%;
+	max-width: 950px;
+	background-color: #31166B;
+	border-radius: 16px;
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 81px 0px 82px;
+	margin-bottom: 34px;
+}
+
+.join P {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align: right;
+	width: 570px;
+	margin-top: 68px;
+}
+
+h2 {
+	font-family: 'Akwe Pro';
+	font-weight: 900;
+	font-size: 48px;
+	color: #FFFFFF;
+	position: relative;
+	z-index: 2;
+}
+/* Work */
+.work {
+	width: 100%;
+	max-width: 950px;
+	margin-bottom: 100px;
+}
+
+.work-decoration {
+	position: absolute;
+	z-index: 1;
+	margin: -120px 0px 0px 10px;
+}
+
+.work-content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 37px;
+}
+
+.work-left {
+	margin-top: 60px;
+}
+
+.work-right {
+	margin-top: 60px;
+}
+
+.work-text {
+	margin-bottom: 27px;
+}
+
+.work-title {
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-size: 20px;
+	color: #FFFFFF;
+	margin-bottom: 6px;
+}
+
+.work-subtitle {
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 14px;
+	color: #B5B0B0;
+}
+/* Power */
+.power {
+	width: 100%;
+	max-width: 950px;
+	margin-bottom: 120px;
+}
+
+.power-decoration {
+	position: absolute;
+	z-index: 1;
+	margin: -100px 0px 0px 384px;
+}
+
+.power-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 62px;
+}
+
+.power-image {
+	margin-left: 36px;
+}
+
+.power-text {
+	display: flex;
+	margin-bottom: 103px;
+}
+
+.power-container {
+	margin-right: 50px;
+}
+
+.power-title {
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-size: 16px;
+	color: #FFFFFF;
+	margin-bottom: 12px;
+}
+
+.power-subtitle {
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 14px;
+	color: #B5B0B0;
+	width: 350px;
+}
+
+.power-token {
+	font-family: 'Akwe Pro';
+	font-weight: 900;
+	font-size: 48px;
+	color: #2CA902;
+}
+
+.power-button {
+	font-family: 'Akwe Pro';
+	font-weight: 600;
+	font-size: 14px;
+	color: #FFFFFF;
+	padding: 6px 18px 6px 18px;
+	background-color: #2CA902;
+	border-radius: 35px;
+}
+/* Roadmap */
+.roadmap {
+	width: 100%;
+	max-width: 950px;
+	margin-bottom: 170px;
+}
+
+.roadmap-image {
+	position: absolute;
+	z-index: 1;
+}
+
+.roadmap-text {
+	position: relative;
+	z-index: 2;
+}
+
+.roadmap-text p {
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 14px;
+	color: #B5B0B0;
+}
+
+.roadmap-p1 {
+	margin: 150px 0px 0px 134px;
+	width: 289px;
+	text-align: right;
+}
+
+.roadmap-p2 {
+	margin: 135px 0px 0px 531px;
+}
+
+.roadmap-p3 {
+	margin: 135px 0px 0px 140px;
+	width: 283px;
+	text-align: right;
+}
+
+.roadmap-p4 {
+	margin: 135px 0px 0px 531px;
+}
+/* Tokenomics */
+.tokenomics {
+	width: 100%;
+	max-width: 950px;
+	margin-bottom: 95px;
+}
+
+.tokenomics-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tokenomics-title {
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-size: 20px;
+	color: #FFFFFF;
+	margin-bottom: 6px;
+}
+
+.tokenomics-subtitle {
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 14px;
+	color: #B5B0B0;
+}
+
+.tokenomics-text {
+	margin-bottom: 25px;
+}
+
+.tokenomics-percentages {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 25px;
+}
+
+.tokenomics-number {
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-size: 16px;
+	color: #FFFFFF;
+	width: 70px;
+	height: 70px;
+	background: linear-gradient(180deg, #742AFB 0%, #240067 100%);
+	border-radius: 50%;
+	padding: 6px 24px 0px 24px;
+	position: relative;
+	z-index: 1;
+}
+
+.tokenomics-block {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding: 13px 0px 0px 0px;
+	text-align: center;
+	width: 154px;
+	height: 65px;
+	border-radius: 5px;
+	position: relative;
+	top: -40px;
+	margin-bottom: -40px;
+	z-index: 2;
+}
+
+.block-skyblue {
+	background-color: #00B2FE;
+}
+
+.block-blue {
+ background-color: #091A74;
+}
+
+.block-green {
+ background-color: #2CA902;
+}
+
+.block-purple {
+	background-color: #742AFB;
+}
+/* Security */
+.security {
+	width: 100%;
+	max-width: 950px;
+	background-color: #31166B;
+	margin-bottom: 80px;
+	border-radius: 12px;
+	display: flex;
+}
+
+h4 {
+	font-family: 'Akwe Pro';
+	font-weight: 900;
+	font-size: 58px;
+	color: #FFFFFF;
+	margin: 44px 90px 0px 80px;
+}
+
+.security-line {
+	height: 363px;
+	width: 1px;
+	background-color: #74619A;
+	margin-right: 44px;
+}
+
+.security-information {
+	display: flex;
+	flex-direction: column;
+}
+
+.security-information p {
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 14px;
+	color: #B5B0B0;
+	width: 250px;
+	margin: 57px 0px 25px 0px;
+}
+
+.security-report {
+	font-family: 'Akwe Pro';
+	font-weight: 600;
+	font-size: 14px;
+	color: #FFFFFF;
+	padding: 6px 18px 6px 18px;
+	background-color: #2CA902;
+	border-radius: 35px;
+	margin-bottom: 13px;
+	width: 118px;
+}
+
+.security-check {
+	font-family: 'Akwe Pro';
+	font-weight: 600;
+	font-size: 14px;
+	color: #FFFFFF;
+	padding: 6px 18px 6px 18px;
+	background-color: #742AFB;
+	border-radius: 35px;
+	width: 238px;
+}
+/* Why */
+
+.why {
+	width: 100%;
+	max-width: 950px;
+	margin-bottom: 80px;
+}
+
+.why-content {
+	display: flex;
+	align-items: center;
+	margin-top: 34px;
+}
+
+.why-left {
+	width: 310px;
+	background-color: #32176E;
+	padding: 74px 0px 75px 0px;
+}
+
+.why-mid {
+	width: 330px;
+	background-color: #742AFB;
+	border-radius: 12px;
+	padding: 58px 0px 0px 34px;
+}
+
+.why-right {
+	width: 310px;
+	background-color: #32176E;
+	padding: 74px 0px 75px 0px;
+}
+
+.why-title {
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	margin-bottom: 11px;
+}
+
+.why-subtitle {
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 14px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.why-mid-title {
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-size: 20px;
+	color: #FFFFFF;
+	margin-bottom: 14px;
+}
+
+.why-mid-subtitle {
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.why-image {
+	margin-left: 130px;
+}
+/* Footer */
+footer {
+	width: 100%;
+	max-width: 950px;
+	background-color: #32176E;
+	border-radius: 12px 12px 0px 0px;
+	padding: 40px 80px 60px 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-copy {
+	display: flex;
+	align-items: center;
+	background-color: #742AFB40;
+	padding: 9px 15px 9px 18px;
+	width: 170px;
+	border-radius: 35px;
+}
+
+ .footer-copy-text {
+	font-family: 'Akwe Pro';
+	font-weight: 600;
+	font-size: 14px;
+	color: #FFFFFF;
+	margin-right: 14px;
+ }
+
+ .footer-copy-button {
+	border: none;
+	background-color: transparent;
+ }
+
+ .footer-copy-button:hover {
+	cursor: pointer;
+ }
+
+ .footer-socials {
+	display: flex;
+	align-items: center;
+ }
+ 
+ .footer-x {
+	margin: 0px 29px 0px 29px;
+ }
+
+ .footer-buy {
+	font-family: 'Akwe Pro';
+	font-weight: 600;
+	font-size: 14px;
+	color: #FFFFFF;
+	padding: 9px 18px 9px 18px;
+	border-radius: 35px;
+	background-color: #2CA902;
+ }
